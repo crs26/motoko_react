@@ -78,7 +78,8 @@ module.exports = {
   module: {
     rules: [
       { test: /\.(ts|tsx|jsx)$/, loader: 'ts-loader' },
-      { test: /\.(css|scss)$/, use: ['style-loader', 'css-loader', 'sass-loader'] }
+      { test: /\.(css|scss)$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+      { test: /\.(png|svg|jpg|jpeg|gif)$/, loader: 'url-loader' }
     ]
   },
   plugins: [
